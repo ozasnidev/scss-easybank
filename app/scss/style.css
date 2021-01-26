@@ -23,6 +23,11 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,26 +75,27 @@ button, .button {
   }
 }
 
-.header nav {
-  padding: 1.0625rem 1.5rem;
-}
-
 .header.open .overlay {
   display: block;
 }
 
-.header.open .header__menu span:first-child {
+.header.open .header__toggle span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .header__menu span:nth-child(2) {
+.header.open .header__toggle span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header__menu span:last-child {
+.header.open .header__toggle span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.header nav {
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 
 .header .overlay {
@@ -108,7 +114,7 @@ button, .button {
   height: 1.375rem;
 }
 
-.header__mobile-menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -119,7 +125,7 @@ button, .button {
           transform-origin: 3px 1px;
 }
 
-.header__mobile-menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
 
@@ -156,6 +162,25 @@ button, .button {
 
 .header__links a:hover::before {
   opacity: 1;
+}
+
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  background: white;
+  border-radius: 3px;
+  left: 50%;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__menu a {
+  color: #2d314d;
+  display: block;
+  padding: 0.625rem;
+  text-align: center;
 }
 
 .header__cta {

@@ -1,12 +1,10 @@
 .header{
-    nav{
-        padding: 1.0625rem 1.5rem;
-    }
+
     &.open{
         .overlay{
             display: block;
         }
-        .header__menu{
+        .header__toggle{
             & span:first-child{
                 transform: rotate(45deg);
             }
@@ -17,6 +15,10 @@
                 transform: rotate(-45deg);
             }
         }
+    }
+    nav{
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
     .overlay{
         background-image: linear-gradient($darkblue, transparent);
@@ -33,7 +35,7 @@
             height: 1.375rem;
         }
     }
-    &__mobile-menu{
+    &__toggle{
         >span{
             display:block;
             width: 26px;
@@ -77,6 +79,22 @@
                 }
             }
         }  
+    }
+    &__menu{
+        position: absolute;
+        width: calc(100% - 3rem);
+        background: $white;
+        border-radius: 3px;
+        left: 50%;
+        margin-top:1.5rem;
+        padding: 1.625rem;
+        transform: translateX(-50%);
+        a{
+            color: $darkblue;
+            display: block;
+            padding: 0.625rem;
+            text-align: center;
+        }
     }
     &__cta{
         font-size: $font-sm;
