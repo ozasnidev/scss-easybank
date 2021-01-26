@@ -2,6 +2,27 @@
     nav{
         padding: 1.0625rem 1.5rem;
     }
+    &.open{
+        .header__menu{
+            & span:first-child{
+                transform: rotate(45deg);
+            }
+            & span:nth-child(2){
+                opacity:0;
+            }
+            & span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .overlay{
+        background-image: linear-gradient($darkblue, transparent);
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        top: 3.75rem;
+    }
     &__logo{
         img{
             width:8.8125rem;
@@ -19,17 +40,6 @@
 
             &:not(:last-child){
                 margin-bottom: 5px;
-            }
-        }
-        &.open{
-            & span:first-child{
-                transform: rotate(45deg);
-            }
-            & span:nth-child(2){
-                opacity:0;
-            }
-            & span:last-child{
-                transform: rotate(-45deg);
             }
         }
     }
@@ -74,3 +84,4 @@
         }
     }
 }
+

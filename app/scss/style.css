@@ -74,6 +74,30 @@ button, .button {
   padding: 1.0625rem 1.5rem;
 }
 
+.header.open .header__menu span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__menu span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 3.75rem;
+}
+
 .header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
@@ -92,20 +116,6 @@ button, .button {
 
 .header__mobile-menu > span:not(:last-child) {
   margin-bottom: 5px;
-}
-
-.header__mobile-menu.open span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header__mobile-menu.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.header__mobile-menu.open span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .header__links a {
