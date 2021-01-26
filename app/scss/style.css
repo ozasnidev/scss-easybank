@@ -84,10 +84,28 @@ button, .button {
   width: 26px;
   height: 2px;
   background-color: #2d314d;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
 }
 
 .header__mobile-menu > span:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.header__mobile-menu.open span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__mobile-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__mobile-menu.open span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__links a {
