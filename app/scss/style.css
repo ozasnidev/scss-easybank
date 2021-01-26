@@ -74,6 +74,10 @@ button, .button {
   padding: 1.0625rem 1.5rem;
 }
 
+.header.open .overlay {
+  display: block;
+}
+
 .header.open .header__menu span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -91,9 +95,10 @@ button, .button {
 .header .overlay {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
-  position: fixed;
   bottom: 0px;
   left: 0px;
+  opacity: 0;
+  position: fixed;
   right: 0px;
   top: 3.75rem;
 }
@@ -162,5 +167,75 @@ button, .button {
 
 .header__cta:hover {
   opacity: 0.75;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in .3s ease-in-out forwards;
+          animation: fade-in .3s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out .3s ease-in-out forwards;
+          animation: fade-out .3s ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */

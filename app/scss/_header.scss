@@ -3,6 +3,9 @@
         padding: 1.0625rem 1.5rem;
     }
     &.open{
+        .overlay{
+            display: block;
+        }
         .header__menu{
             & span:first-child{
                 transform: rotate(45deg);
@@ -17,9 +20,10 @@
     }
     .overlay{
         background-image: linear-gradient($darkblue, transparent);
-        position: fixed;
         bottom: 0px;
         left: 0px;
+        opacity: 0;
+        position: fixed;
         right: 0px;
         top: 3.75rem;
     }
