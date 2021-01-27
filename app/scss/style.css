@@ -9,12 +9,20 @@ html {
           box-sizing: inherit;
 }
 
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
+p {
+  font-size: 0.90rem;
+}
+
 body {
   color: #9698a6;
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.3;
 }
@@ -28,8 +36,7 @@ a, a:visited, a:hover {
 }
 
 .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 2.25rem 1.5rem;
 }
 
 .flex {
@@ -64,6 +71,7 @@ button, .button {
   border: none;
   cursor: pointer;
   color: white;
+  display: inline-block;
   font-weight: 400;
 }
 
@@ -292,5 +300,22 @@ button, .button {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.15;
+  font-size: 2.3125rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */
