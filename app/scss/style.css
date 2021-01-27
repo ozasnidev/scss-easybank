@@ -73,6 +73,13 @@ button, .button {
   color: white;
   display: inline-block;
   font-weight: 400;
+  font-size: 0.875rem;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+button:hover, .button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.9375em) {
@@ -197,17 +204,6 @@ button, .button {
   text-align: center;
 }
 
-.header__cta {
-  font-size: 0.875rem;
-  color: white;
-  -webkit-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;
-}
-
-.header__cta:hover {
-  opacity: 0.75;
-}
-
 .has-fade {
   visibility: hidden;
 }
@@ -289,6 +285,7 @@ button, .button {
   background-position: center center;
   min-height: 17.5rem;
   position: relative;
+  z-index: -5;
 }
 
 .hero__image::before {

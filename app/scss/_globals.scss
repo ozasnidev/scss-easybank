@@ -53,6 +53,13 @@ button, .button{
     color: $white;
     display: inline-block;
     font-weight: 400;
+    font-size: $font-sm;
+
+    transition: opacity .3s ease-in-out;
+
+        &:hover{
+            opacity: 0.75;
+        }
 }
 //Visibility
 .hide-for-mobile{
