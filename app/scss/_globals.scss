@@ -52,24 +52,42 @@ a, a:visited, a:hover{
     margin: 0 auto;
     
     &--pall{
-        padding: 2.25rem 1.5rem;
+        padding: 4.375rem 1.5rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     }
     &--px{
-        padding-top: 2.25rem;   
-        padding-bottom: 2.25rem;
+        padding-top: 4.375rem;   
+        padding-bottom: 4.375rem;
     }
     &--py{
         padding-right: 1.5rem;
         padding-left: 1.5rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
     }
     &--pt{
-        padding-top: 2.25rem;        
+        padding-top: 4.375rem; 
+        
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+        }
     }
     &--pr{
         padding-right: 1.5rem;
     }
     &--pb{
-        padding-bottom: 2.25rem;
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-bottom: 6rem;
+        }
     }
     &--pl{
         padding-left: 1.5rem;
