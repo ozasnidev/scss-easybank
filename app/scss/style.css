@@ -11,6 +11,32 @@ html {
 
 h1, h2, h3 {
   margin-top: 0px;
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 p {
@@ -25,6 +51,7 @@ body {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.3;
+  min-height: 300vh;
 }
 
 body.noscroll {
@@ -393,8 +420,7 @@ button:hover, .button:hover {
     height: 122%;
     background-image: url("/images/image-mockups.png");
     background-size: 94%;
-    background-repeat: no-repeat;
-    background-position: center 150%;
+    background-position: center 250%;
     left: 22%;
   }
 }
@@ -415,24 +441,24 @@ button:hover, .button:hover {
   }
 }
 
-.hero__text h1 {
-  font-weight: 300;
-  color: #2d314d;
-  line-height: 1.15;
-  font-size: 2.3125rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 64em) {
-  .hero__text h1 {
-    font-size: 3.25rem;
-  }
-}
-
 .hero__text p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
   font-size: 1.125rem;
+}
+
+.feature {
+  background-color: #f3f4f6;
+}
+
+.feature__intro {
+  margin-bottom: 3.75rem;
+}
+
+@media (min-width: 64em) {
+  .feature__intro {
+    width: 50%;
+  }
 }
 
 @media (min-width: 40em) {
@@ -463,5 +489,35 @@ button:hover, .button:hover {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.feature__title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .feature__title {
+    font-size: 1.5rem;
+    margin-bottom: 2.125rem;
+  }
+}
+
+.feature__description {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
