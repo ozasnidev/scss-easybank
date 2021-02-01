@@ -5,6 +5,13 @@
 
     &__content{
 
+        h2{
+            text-align: center;
+    
+            @include breakpoint-up(medium){
+                text-align: left;
+            }
+        }
     }
     &__grid{
         display: grid;
@@ -19,7 +26,13 @@
     }
     &__item{
         border-radius: 0.3125rem;
+        box-shadow: 0px 3px 12px rgba($color: #000000, $alpha: 0.5);
         overflow: hidden;
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     &__image{
         height: 12.5rem;
@@ -29,6 +42,7 @@
     }
     &__text{
         background-color: $white;
+        color: $grayishBlue;
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 
         @include breakpoint-up(medium){
@@ -36,12 +50,16 @@
         }
     }
     &__author{
-
+        font-size: 0.625rem;
+        margin-bottom: 1rem;
     }
     &__title{
-
+        color: $darkblue;
+        font-size: 1.0625rem;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
     }
     &__description{
-
+        font-size: 0.8125rem;
     }
 }

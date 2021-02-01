@@ -558,6 +558,16 @@ button:hover, .button:hover {
   background-color: #fafafa;
 }
 
+.article__content h2 {
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .article__content h2 {
+    text-align: left;
+  }
+}
+
 .article__grid {
   display: -ms-grid;
   display: grid;
@@ -580,7 +590,16 @@ button:hover, .button:hover {
 
 .article__item {
   border-radius: 0.3125rem;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.article__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .article__image {
@@ -592,6 +611,7 @@ button:hover, .button:hover {
 
 .article__text {
   background-color: white;
+  color: #9698a6;
   padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 }
 
@@ -599,5 +619,21 @@ button:hover, .button:hover {
   .article__text {
     padding: 1.875rem 1.5625rem;
   }
+}
+
+.article__author {
+  font-size: 0.625rem;
+  margin-bottom: 1rem;
+}
+
+.article__title {
+  color: #2d314d;
+  font-size: 1.0625rem;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.article__description {
+  font-size: 0.8125rem;
 }
 /*# sourceMappingURL=style.css.map */
