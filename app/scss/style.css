@@ -757,6 +757,12 @@ button:hover, .button:hover {
 
 .footer__links a {
   line-height: 2.25;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+.footer__links a:hover {
+  color: #31d35c;
 }
 
 @media (min-width: 64em) {
